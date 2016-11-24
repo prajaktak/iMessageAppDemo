@@ -20,13 +20,11 @@ class NatureStickerBrowserViewController: MSStickerBrowserViewController{
     }
     
     func loadStickers() {
-        createSteaker(asset: "Flower1", localizedDescription: "Flower")
-        createSteaker(asset: "Flower2", localizedDescription: "Flower")
-        createSteaker(asset: "Flower3", localizedDescription: "Flower")
-        createSteaker(asset: "Flower4", localizedDescription: "Flower")
-        createSteaker(asset: "Flower5", localizedDescription: "Flower")
-        createSteaker(asset: "Flower6", localizedDescription: "Flower")
-        createSteaker(asset: "Flower7", localizedDescription: "Flower")
+        
+        for i in 0 ..< 8
+        {
+            createSteaker(asset: "Flower"+i.description  ,localizedDescription: "Flower")
+        }
     }
     
     func createSteaker(asset:String, localizedDescription:String) {
